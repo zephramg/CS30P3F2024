@@ -75,12 +75,12 @@ public class SemAvg {
 		frame.getContentPane().add(textField_2);
 		textField_2.setColumns(10);
 		
-		JButton btnNewButton = new JButton("Calculate Average ");
+		JButton btnNewButton = new JButton("Calculate Average");
 		btnNewButton.setBounds(89, 176, 126, 23);
 		frame.getContentPane().add(btnNewButton);
 		
 		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setBounds(284, 33, 170, 249);
+		lblNewLabel_1.setBounds(291, 33, 170, 249);
 		frame.getContentPane().add(lblNewLabel_1);
 	}
 }
