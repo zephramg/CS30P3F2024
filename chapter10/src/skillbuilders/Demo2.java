@@ -51,10 +51,7 @@ public class Demo2 {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() 
-	{
-		
-		task
-		
+	{	
 		
 		frame = new JFrame();
 		frame.setBounds(100, 100, 582, 371);
