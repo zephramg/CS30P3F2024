@@ -11,6 +11,7 @@ import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
 import javax.swing.JTextArea;
 import javax.swing.JLabel;
 import java.awt.event.MouseAdapter;
@@ -53,6 +54,12 @@ public class Demo2 {
 	private void initialize() 
 	{	
 		
+		ImageIcon cres = new ImageIcon("C:\\Users\\38020001\\git\\CS30P3F2024\\chapter10\\src\\img\\crescent.png");
+		ImageIcon lest = new ImageIcon("C:\\Users\\38020001\\git\\CS30P3F2024\\chapter10\\src\\img\\pearson.png");
+		ImageIcon west = new ImageIcon("C:\\Users\\38020001\\git\\CS30P3F2024\\chapter10\\src\\img\\western.png");
+
+
+				
 		frame = new JFrame();
 		frame.setBounds(100, 100, 582, 371);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -96,6 +103,10 @@ public class Demo2 {
 		panel.add(LNt);
 		
 		
+		JLabel img = new JLabel("");
+		img.setBounds(10, 189, 281, 110);
+		panel.add(img);
+		
 		JComboBox grades = new JComboBox();
 		grades.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		grades.setModel(new DefaultComboBoxModel(new String[] {"Select Grade", "10", "11", "12"}));
@@ -114,6 +125,9 @@ public class Demo2 {
 		
 		JButton submit = new JButton("SUBMIT");
 		submit.addActionListener(new ActionListener() {
+			/**
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e)  
 			{
 				String grade = " ";
@@ -138,14 +152,17 @@ public class Demo2 {
 				// Schools
 				if(schools.getSelectedItem().equals("Crescent Heights")) {
 					school = "Crescent";
+					img.setIcon(cres);
 				}
 				
 				if(schools.getSelectedItem().equals("Lester B. Pearson")) {
 					school = "Pearson";
+					img.setIcon(lest);
 				}
 				
 				if(schools.getSelectedItem().equals("Western")) {
 					school = "Western";
+					img.setIcon(west);
 				}
 				
 				
@@ -156,7 +173,7 @@ public class Demo2 {
 					fN + " " +
 					lN + " is in grade " +
 					grade + " and goes to " +
-					school
+					school + "."
 					
 			    
 						);
@@ -167,9 +184,5 @@ public class Demo2 {
 		panel.add(submit);
 
 
-		
-		JLabel img = new JLabel("");
-		img.setBounds(10, 189, 526, 110);
-		panel.add(img);
 	}
 }
