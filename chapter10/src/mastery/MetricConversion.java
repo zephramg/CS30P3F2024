@@ -57,7 +57,7 @@ public class MetricConversion {
 			"feet to meters", 
 			"gallons to liters", 
 			"pounds to kilograms"
-		}));
+		})); // 
 		comboBox.setBounds(10, 31, 250, 22);
 		frame.getContentPane().add(comboBox);
 		
