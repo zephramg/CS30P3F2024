@@ -16,7 +16,6 @@ class Account {
         this.accountID = accountID;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.balance = balance;
     }
 
     public String getAccountID() {
@@ -275,8 +274,8 @@ public class LocalBank {
             }
 
             account.deposit(amount);
-            displayArea.setText("Deposit successful.\n" + account.getAccountInfo());
-
+            displayArea.setText("Deposited $" + String.format("%.2f", amount) + " to account ID: " + accountID);
+            
             // Clear input fields
             accountIDField.setText("");
             amountField.setText("");
@@ -299,11 +298,11 @@ public class LocalBank {
         panel.add(accountIDField);
 
         JLabel amountLabel = new JLabel("Withdrawal Amount:");
-        amountLabel.setBounds(30, 70, 130, 25);
+        amountLabel.setBounds(50, 70, 150, 25);
         panel.add(amountLabel);
 
         amountField = new JTextField();
-        amountField.setBounds(180, 70, 180, 25);
+        amountField.setBounds(200, 70, 160, 25);
         panel.add(amountField);
 
         JButton withdrawBtn = new JButton("Withdraw");
@@ -335,11 +334,11 @@ public class LocalBank {
             }
 
             if (account.withdraw(amount)) {
-                displayArea.setText("Withdrawal successful.\n" + account.getAccountInfo());
+                displayArea.setText("Withdrew $" + String.format("%.2f", amount) + " from account ID: " + accountID);
             } else {
-                displayArea.setText("Insufficient funds.\n" + account.getAccountInfo());
+                displayArea.setText("Insufficient funds in account ID: " + accountID);
             }
-
+            
             // Clear input fields
             accountIDField.setText("");
             amountField.setText("");
@@ -354,22 +353,21 @@ public class LocalBank {
         panel.setLayout(null);
 
         JLabel accountIDLabel = new JLabel("Account ID:");
-        accountIDLabel.setBounds(50, 50, 100, 25);
+        accountIDLabel.setBounds(50, 30, 100, 25);
         panel.add(accountIDLabel);
 
         accountIDField = new JTextField();
-        accountIDField.setBounds(160, 50, 200, 25);
+        accountIDField.setBounds(160, 30, 200, 25);
         panel.add(accountIDField);
 
         JButton checkBtn = new JButton("Check Balance");
-        checkBtn.setBounds(160, 100, 150, 30);
+        checkBtn.setBounds(160, 70, 150, 30);
         panel.add(checkBtn);
 
         checkBtn.addActionListener(e -> {
             String accountID = accountIDField.getText().trim();
-
             if (accountID.isEmpty()) {
-                JOptionPane.showMessageDialog(frame, "Please enter the Account ID.", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(frame, "Please enter an account ID.", "Error", JOptionPane.ERROR_MESSAGE);
                 return;
             }
 
@@ -379,8 +377,8 @@ public class LocalBank {
                 return;
             }
 
-            displayArea.setText("Account Information:\n" + account.getAccountInfo());
-
+            displayArea.setText(account.getAccountInfo());
+            
             // Clear input field
             accountIDField.setText("");
         });
@@ -394,32 +392,32 @@ public class LocalBank {
         panel.setLayout(null);
 
         JLabel accountIDLabel = new JLabel("Account ID:");
-        accountIDLabel.setBounds(50, 50, 100, 25);
+        accountIDLabel.setBounds(50, 30, 100, 25);
         panel.add(accountIDLabel);
 
         accountIDField = new JTextField();
-        accountIDField.setBounds(160, 50, 200, 25);
+        accountIDField.setBounds(160, 30, 200, 25);
         panel.add(accountIDField);
 
         JButton removeBtn = new JButton("Remove Account");
-        removeBtn.setBounds(160, 100, 150, 30);
+        removeBtn.setBounds(160, 70, 150, 30);
         panel.add(removeBtn);
 
         removeBtn.addActionListener(e -> {
             String accountID = accountIDField.getText().trim();
-
             if (accountID.isEmpty()) {
-                JOptionPane.showMessageDialog(frame, "Please enter the Account ID.", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(frame, "Please enter an account ID.", "Error", JOptionPane.ERROR_MESSAGE);
                 return;
             }
 
-            Account removed = accounts.remove(accountID);
-            if (removed != null) {
-                displayArea.setText("Account " + accountID + " removed successfully.");
-            } else {
-                displayArea.setText("Account not found.");
+            Account account = accounts.remove(accountID);
+            if (account == null) {
+                JOptionPane.showMessageDialog(frame, "Account not found.", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
             }
 
+            displayArea.setText("Account ID " + accountID + " removed successfully.");
+            
             // Clear input field
             accountIDField.setText("");
         });
@@ -427,16 +425,8 @@ public class LocalBank {
         return panel;
     }
 
-    // Method to generate a unique Account ID based on first and last name
+    // Method to generate a unique account ID
     private String generateAccountID(String firstName, String lastName) {
-        String id = firstName.substring(0, 1).toUpperCase() + lastName;
-        // Ensure uniqueness by appending numbers if necessary
-        int suffix = 1;
-        String uniqueID = id;
-        while (accounts.containsKey(uniqueID)) {
-            uniqueID = id + suffix;
-            suffix++;
-        }
-        return uniqueID;
+        return firstName.substring(0, 1).toUpperCase() + lastName.toUpperCase() + (accounts.size() + 1);
     }
 }
