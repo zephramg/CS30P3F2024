@@ -1,3 +1,4 @@
+
 package mastery;
 
 import java.awt.EventQueue;
@@ -273,6 +274,9 @@ public class LocalBankGUI {
 		frame.getContentPane().add(disp);
 		
 		JButton process = new JButton("Process Transaction");
+		
+		
+		
 		process.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		process.setBounds(10, 319, 428, 71);
 		frame.getContentPane().add(process);
@@ -291,6 +295,7 @@ public class LocalBankGUI {
 				if(comboBox.getSelectedItem().equals("Add Account")) {
 					fname.setForeground(Color.red);
 					lname.setForeground(Color.red);
+					bal.setForeground(Color.red);
 				}
 				else if(comboBox.getSelectedItem().equals("Remove Account")) {
 					accNum.setForeground(Color.red);

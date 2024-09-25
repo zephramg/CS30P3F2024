@@ -18,4 +18,8 @@ public class Customer {
     public Account getAccount() {
         return account;
     }
+
+    public String getCustomerInfo() {
+        return "Customer: " + getFullName() + "\n" + account.getAccountInfo();
+    }
 }
