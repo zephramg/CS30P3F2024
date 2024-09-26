@@ -1,33 +1,30 @@
-
 package mastery;
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
-import javax.swing.JTextField;
-import java.awt.Color;
 import java.awt.Font;
+import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.FocusAdapter;
-import java.awt.event.FocusEvent;
-
 
 public class LocalBankGUI {
 
 	private JFrame frame;
-	private JTextField accNum;
+	private JTextField acctNum;
 	private JTextField amt;
-	private JTextField fname;
-	private JTextField lname;
-	private JTextField bal;
-
+	private JTextField fName;
+	private JTextField lName;
+	private JTextField begBalance;
+	
+	Bank easySave = new Bank(); // Bank object to handle transactions
+	
 	/**
 	 * Launch the application.
 	 */
@@ -56,276 +53,174 @@ public class LocalBankGUI {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 464, 442);
+		frame.setBounds(100, 100, 521, 459);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-
-		// Account number text field.
-		accNum = new JTextField();
-		accNum.setForeground(Color.LIGHT_GRAY);
-		accNum.setText("Enter account number");
-		accNum.setBounds(10, 71, 428, 20);
-		accNum.addMouseListener(new MouseAdapter() {
-		    @Override
-		    public void mouseClicked(MouseEvent e) {
-		        // Only clear accNum if it contains the placeholder (logic applied to all text fields)
-		        if (accNum.getText().equals("Enter account number")) {
-		            accNum.setText(null);
-		            accNum.setForeground(Color.BLACK);
-		        }
-		        // Reset other fields to their placeholders only if they contain the placeholders (logic applied to all text fields)
-		        if (amt.getText().equals("Enter amount")) {
-		            amt.setText("Enter amount");
-		            amt.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (fname.getText().equals("Enter first name")) {
-		            fname.setText("Enter first name");
-		            fname.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (lname.getText().equals("Enter last name")) {
-		            lname.setText("Enter last name");
-		            lname.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (bal.getText().equals("Enter balance")) {
-		            bal.setText("Enter balance");
-		            bal.setForeground(Color.LIGHT_GRAY);
-		        }
-		    }
-		});
-		accNum.addFocusListener(new FocusAdapter() {
-		    @Override
-		    public void focusLost(FocusEvent e) {
-		        // Reset to placeholder if field is empty when focus is lost (logic applied to all text fields)
-		        if (accNum.getText().isEmpty()) {
-		            accNum.setText("Enter account number");
-		            accNum.setForeground(Color.LIGHT_GRAY);
-		        }
-		    }
-		});
-		frame.getContentPane().add(accNum);
-
-		// Amount text field.
-		amt = new JTextField();
-		amt.setForeground(Color.LIGHT_GRAY);
-		amt.setText("Enter amount");
-		amt.setBounds(10, 102, 428, 20);
-		amt.addMouseListener(new MouseAdapter() {
-		    @Override
-		    public void mouseClicked(MouseEvent e) {
-		        if (amt.getText().equals("Enter amount")) {
-		            amt.setText(null);
-		            amt.setForeground(Color.BLACK);
-		        }
-		        if (accNum.getText().equals("Enter account number")) {
-		            accNum.setText("Enter account number");
-		            accNum.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (fname.getText().equals("Enter first name")) {
-		            fname.setText("Enter first name");
-		            fname.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (lname.getText().equals("Enter last name")) {
-		            lname.setText("Enter last name");
-		            lname.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (bal.getText().equals("Enter balance")) {
-		            bal.setText("Enter balance");
-		            bal.setForeground(Color.LIGHT_GRAY);
-		        }
-		    }
-		});
-		amt.addFocusListener(new FocusAdapter() {
-		    @Override
-		    public void focusLost(FocusEvent e) {
-		        if (amt.getText().isEmpty()) {
-		            amt.setText("Enter amount");
-		            amt.setForeground(Color.LIGHT_GRAY);
-		        }
-		    }
-		});
-		frame.getContentPane().add(amt);
-
-		// First name text field.
-		fname = new JTextField();
-		fname.setForeground(Color.LIGHT_GRAY);
-		fname.setText("Enter first name");
-		fname.setBounds(10, 133, 428, 20);
-		fname.addMouseListener(new MouseAdapter() {
-		    @Override
-		    public void mouseClicked(MouseEvent e) {
-		        if (fname.getText().equals("Enter first name")) {
-		            fname.setText(null);
-		            fname.setForeground(Color.BLACK);
-		        }
-		        if (accNum.getText().equals("Enter account number")) {
-		            accNum.setText("Enter account number");
-		            accNum.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (amt.getText().equals("Enter amount")) {
-		            amt.setText("Enter amount");
-		            amt.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (lname.getText().equals("Enter last name")) {
-		            lname.setText("Enter last name");
-		            lname.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (bal.getText().equals("Enter balance")) {
-		            bal.setText("Enter balance");
-		            bal.setForeground(Color.LIGHT_GRAY);
-		        }
-		    }
-		});
-		fname.addFocusListener(new FocusAdapter() {
-		    @Override
-		    public void focusLost(FocusEvent e) {
-		        if (fname.getText().isEmpty()) {
-		            fname.setText("Enter first name");
-		            fname.setForeground(Color.LIGHT_GRAY);
-		        }
-		    }
-		});
-		frame.getContentPane().add(fname);
-
-		// Last name text field.
-		lname = new JTextField();
-		lname.setForeground(Color.LIGHT_GRAY);
-		lname.setText("Enter last name");
-		lname.setBounds(10, 164, 428, 20);
-		lname.addMouseListener(new MouseAdapter() {
-		    @Override
-		    public void mouseClicked(MouseEvent e) {
-		        if (lname.getText().equals("Enter last name")) {
-		            lname.setText(null);
-		            lname.setForeground(Color.BLACK);
-		        }
-		        if (accNum.getText().equals("Enter account number")) {
-		            accNum.setText("Enter account number");
-		            accNum.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (amt.getText().equals("Enter amount")) {
-		            amt.setText("Enter amount");
-		            amt.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (fname.getText().equals("Enter first name")) {
-		            fname.setText("Enter first name");
-		            fname.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (bal.getText().equals("Enter balance")) {
-		            bal.setText("Enter balance");
-		            bal.setForeground(Color.LIGHT_GRAY);
-		        }
-		    }
-		});
-		lname.addFocusListener(new FocusAdapter() {
-		    @Override
-		    public void focusLost(FocusEvent e) {
-		        if (lname.getText().isEmpty()) {
-		            lname.setText("Enter last name");
-		            lname.setForeground(Color.LIGHT_GRAY);
-		        }
-		    }
-		});
-		frame.getContentPane().add(lname);
 		
-		// Balance text field.
-		bal = new JTextField();
-		bal.setForeground(Color.LIGHT_GRAY);
-		bal.setText("Enter balance");
-		bal.setBounds(10, 195, 428, 20);
-		bal.addMouseListener(new MouseAdapter() {
-		    @Override
-		    public void mouseClicked(MouseEvent e) {
-		        if (bal.getText().equals("Enter balance")) {
-		            bal.setText(null);
-		            bal.setForeground(Color.BLACK);
-		        }
-		        if (accNum.getText().equals("Enter account number")) {
-		            accNum.setText("Enter account number");
-		            accNum.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (amt.getText().equals("Enter amount")) {
-		            amt.setText("Enter amount");
-		            amt.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (fname.getText().equals("Enter first name")) {
-		            fname.setText("Enter first name");
-		            fname.setForeground(Color.LIGHT_GRAY);
-		        }
-		        if (lname.getText().equals("Enter last name")) {
-		            lname.setText("Enter last name");
-		            lname.setForeground(Color.LIGHT_GRAY);
-		        }
-		    }
-		});
-		bal.addFocusListener(new FocusAdapter() {
-		    @Override
-		    public void focusLost(FocusEvent e) {
-		        if (bal.getText().isEmpty()) {
-		            bal.setText("Enter balance");
-		            bal.setForeground(Color.LIGHT_GRAY);
-		        }
-		    }
-		});
-		frame.getContentPane().add(bal);
-
+		// Account number field
+		acctNum = new JTextField();
+		acctNum.setForeground(Color.GRAY);
+		acctNum.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		acctNum.setText("Enter account number:");
+		acctNum.setBounds(34, 106, 436, 19);
+		frame.getContentPane().add(acctNum);
+		acctNum.setColumns(10);
 		
-		JLabel disp = new JLabel("New label");
-		disp.setBounds(10, 226, 428, 82);
-		frame.getContentPane().add(disp);
-		
-		JButton process = new JButton("Process Transaction");
-		
-		
-		
-		process.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		process.setBounds(10, 319, 428, 71);
-		frame.getContentPane().add(process);
-		
-		JComboBox comboBox = new JComboBox();
-		comboBox.addActionListener(new ActionListener() 
-		{
-			public void actionPerformed(ActionEvent e) // Adjusts color of text boxes based on what action the user selects.
-			{
-				
-				/* Variable List (for reference)
-				 * 
-				 * 		accNum, amt, fname, lname, bal
-				 * 
-				 */
-				if(comboBox.getSelectedItem().equals("Add Account")) {
-					fname.setForeground(Color.red);
-					lname.setForeground(Color.red);
-					bal.setForeground(Color.red);
-				}
-				else if(comboBox.getSelectedItem().equals("Remove Account")) {
-					accNum.setForeground(Color.red);
-				}
-				else if(comboBox.getSelectedItem().equals("Deposit")) {
-					accNum.setForeground(Color.red);
-					amt.setForeground(Color.red);
-				}
-				else if(comboBox.getSelectedItem().equals("Withdrawal")) {
-					
-				}
-				else if(comboBox.getSelectedItem().equals("Check Balance")) {
-					
-				}
-				else {
-					accNum.setForeground(Color.LIGHT_GRAY);
-					amt.setForeground(Color.LIGHT_GRAY);
-					fname.setForeground(Color.LIGHT_GRAY);
-					lname.setForeground(Color.LIGHT_GRAY);
-					bal.setForeground(Color.LIGHT_GRAY);
-				}
-
-				
+		acctNum.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				acctNum.setText("");
+				acctNum.setForeground(Color.BLACK);
 			}
 		});
-		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Select an action:", " ", "Add Account", "Remove Account", "Deposit", "Withdrawal", "Check Balance"}));
-		comboBox.setToolTipText("");
-		comboBox.setBounds(10, 11, 428, 49);
-		frame.getContentPane().add(comboBox);
 		
+		// Amount field
+		amt = new JTextField();
+		amt.setText("Enter amount:");
+		amt.setForeground(Color.GRAY);
+		amt.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		amt.setBounds(34, 136, 436, 19);
+		frame.getContentPane().add(amt);
+		
+		amt.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				amt.setText("");
+				amt.setForeground(Color.BLACK);
+			}
+		});
+		
+		// First name field
+		fName = new JTextField();
+		fName.setText("Enter first name:");
+		fName.setForeground(Color.GRAY);
+		fName.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		fName.setBounds(34, 170, 436, 19);
+		frame.getContentPane().add(fName);
+		
+		fName.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				fName.setText("");
+				fName.setForeground(Color.BLACK);
+			}
+		});
+		
+		// Last name field
+		lName = new JTextField();
+		lName.setText("Enter last name:");
+		lName.setForeground(Color.GRAY);
+		lName.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lName.setBounds(34, 200, 436, 19);
+		frame.getContentPane().add(lName);
+		
+		lName.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				lName.setText("");
+				lName.setForeground(Color.BLACK);
+			}
+		});
+		
+		// Beginning balance field
+		begBalance = new JTextField();
+		begBalance.setText("Enter beginning balance:");
+		begBalance.setForeground(Color.GRAY);
+		begBalance.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		begBalance.setBounds(34, 230, 436, 19);
+		frame.getContentPane().add(begBalance);
+		
+		begBalance.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				begBalance.setText("");
+				begBalance.setForeground(Color.BLACK);
+			}
+		});
+		
+		// Label to display account info
+		JLabel acctinfo = new JLabel("Account info displayed here");
+		acctinfo.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		acctinfo.setBounds(34, 260, 436, 52);
+		frame.getContentPane().add(acctinfo);
+		
+		// ComboBox for bank activities
+		JComboBox<String> bankActivities = new JComboBox<>();
+		bankActivities.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		bankActivities.setModel(new DefaultComboBoxModel<>(new String[] {
+			"Select an action:", "Deposit", "Withdrawal", "Check Balance", "Add Account", "Remove Account"
+		}));
+		bankActivities.setBounds(34, 24, 436, 46);
+		frame.getContentPane().add(bankActivities);
+		
+		// Button for processing transaction
+		JButton btnNewButton = new JButton("Process Transaction");
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 16));
+		btnNewButton.setBounds(34, 341, 436, 54);
+		frame.getContentPane().add(btnNewButton);
+		
+		// Action listener for processing transactions
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String message;
+				
+				switch (bankActivities.getSelectedItem().toString()) {
+					case "Deposit":
+						message = processDeposit();
+						break;
+					case "Withdrawal":
+						message = processWithdrawal();
+						break;
+					case "Check Balance":
+						message = checkBalance();
+						break;
+					case "Add Account":
+						message = addAccount();
+						break;
+					case "Remove Account":
+						message = removeAccount();
+						break;
+					default:
+						message = "Please select a valid action.";
+				}
+				
+				acctinfo.setText(message);
+			}
+			
+			private String processDeposit() {
+				try {
+					double amount = Double.parseDouble(amt.getText());
+					return easySave.transaction(1, acctNum.getText(), amount);
+				} catch (NumberFormatException ex) {
+					return "Invalid amount. Please enter a valid number.";
+				}
+			}
+			
+			private String processWithdrawal() {
+				try {
+					double amount = Double.parseDouble(amt.getText());
+					return easySave.transaction(2, acctNum.getText(), amount);
+				} catch (NumberFormatException ex) {
+					return "Invalid amount. Please enter a valid number.";
+				}
+			}
+			
+			private String checkBalance() {
+				return easySave.checkBalance(acctNum.getText());
+			}
+			
+			private String addAccount() {
+				try {
+					double balance = Double.parseDouble(begBalance.getText());
+					return "New Account ID: " + easySave.addAccount(fName.getText(), lName.getText(), balance);
+				} catch (NumberFormatException ex) {
+					return "Invalid balance. Please enter a valid number.";
+				}
+			}
+			
+			private String removeAccount() {
+				return easySave.deleteAccount(acctNum.getText());
+			}
+		});
 	}
 }

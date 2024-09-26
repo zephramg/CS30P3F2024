@@ -1,25 +1,37 @@
+
 package mastery;
 
-public class Customer {
-    private String firstName;
-    private String lastName;
-    private Account account;
 
-    public Customer(String firstName, String lastName, Account account) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.account = account;
-    }
+public class Customer 
+{
+private String firstName, lastName;
+		
+	
+	/**
+	 * constructor
+	 * pre: none
+	 * post: A Customer object has been created. 
+	 * Customer data has been initialized with parameters.
+	 */
+	public Customer(String fName, String lName) {
+		firstName = fName;
+		lastName = lName;
+	}
+	
 
-    public String getFullName() {
-        return firstName + " " + lastName;
-    }
+	/** 
+	 * Returns a String that represents the Customer object.
+	 * pre: none
+	 * post: A string representing the Customer object has 
+	 * been returned.
+	 */
+	public String toString() {
+		String custString;
 
-    public Account getAccount() {
-        return account;
-    }
+		custString = " " + firstName + " " + lastName + " ";
+	 	return(custString);
+	}
 
-    public String getCustomerInfo() {
-        return "Customer: " + getFullName() + "\n" + account.getAccountInfo();
-    }
+	
+	
 }
