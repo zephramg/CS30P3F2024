@@ -1,3 +1,17 @@
+
+/*
+
+Program: BreakAPlate.java          Last Date of this Revision: October 1, 2024
+
+Purpose: A simulation of a carnival game using a randomizer and a GUI that displays the plates and the prize won.
+
+Author: Zephram Gilson 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 package mastery;
 
 import java.awt.EventQueue;

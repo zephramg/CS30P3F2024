@@ -1,3 +1,18 @@
+
+/*
+
+Program: MetricConversion.java          Last Date of this Revision: October 1, 2024
+
+Purpose: A GUI that uses a dropdown menu that allows the user to select a conversion of measurements,
+	and then displays the conversion.
+
+Author: Zephram Gilson 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 package mastery;
 
 import java.awt.EventQueue;

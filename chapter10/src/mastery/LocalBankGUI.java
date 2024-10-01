@@ -1,3 +1,18 @@
+
+/*
+
+Program: LocalBankGUI.java          Last Date of this Revision: October 1, 2024
+
+Purpose: A bank application using a GUI that allows the user to use features such as
+	deposit, withdraw, check balance, create account, etc.
+
+Author: Zephram Gilson 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 package mastery;
 
 import java.awt.EventQueue;
