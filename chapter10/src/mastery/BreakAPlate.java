@@ -30,11 +30,11 @@ public class BreakAPlate {
     private boolean isGameOver;
 
     // Paths to the images
-    private final String plateImg = "C:\\Users\\38020001\\git\\CS30P3F2024\\chapter10\\src\\breakAPlate_img\\plates.png";
-    private final String platesAllBrokenImg = "C:\\Users\\38020001\\git\\CS30P3F2024\\chapter10\\src\\breakAPlate_img\\plates_all_broken.png";
-    private final String platesTwoBrokenImg = "C:\\Users\\38020001\\git\\CS30P3F2024\\chapter10\\src\\breakAPlate_img\\plates_two_broken.png";
-    private final String tigerPlushImg = "C:\\Users\\38020001\\git\\CS30P3F2024\\chapter10\\src\\breakAPlate_img\\tiger_plush.png";
-    private final String stickerImg = "C:\\Users\\38020001\\git\\CS30P3F2024\\chapter10\\src\\breakAPlate_img\\sticker.png";
+    private final String plateImg = "C://Users//38020001//git//CS30P3F2024//chapter10//src//breakAPlate_img//plates.png";
+    private final String platesAllBrokenImg = "C://Users//38020001//git//CS30P3F2024//chapter10//src//breakAPlate_img//plates_all_broken.png";
+    private final String platesTwoBrokenImg = "C://Users//38020001//git//CS30P3F2024//chapter10//src//breakAPlate_img//plates_two_broken.png";
+    private final String tigerPlushImg = "C://Users//38020001//git//CS30P3F2024//chapter10//src//breakAPlate_img//tiger_plush.png";
+    private final String stickerImg = "C://Users//38020001//git//CS30P3F2024//chapter10//src//breakAPlate_img//sticker.png";
 
     /**
      * Launch the application.
