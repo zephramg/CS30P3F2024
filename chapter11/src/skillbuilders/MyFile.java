@@ -3,26 +3,36 @@ package skillbuilders;
 import java.io.File;
 import java.util.Scanner;
 
-public class MyFile {
+public class MyFile 
+{
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) 
+	{
 		File textFile;
+		String path;
+		
 		Scanner input = new Scanner(System.in);
-		String filename;
 		
-		// Obtain file name from the user
-		System.out.println("Please enter a file name: ");
-		filename = input.nextLine();
+		//Obtain file name from the user
+		System.out.println("Enter a file name: ");
 		
-		// Determine if a file exists
-		textFile = new File(filename);
+		//record the user input
+		path = input.next();
 		
-		if(textFile.exists()) {
+		//Determine if the file exists
+		
+		textFile = new File(path);
+		
+		if(textFile.exists())
+		{
 			System.out.println("File exists.");
-		} else {
-			System.out.println("This file does not exist.");
 		}
+		else
+		{
+			System.out.println("File does not exist.");
+		}
+		
+		
 
 	}
 
