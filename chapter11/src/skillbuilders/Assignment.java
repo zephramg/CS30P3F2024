@@ -13,12 +13,16 @@ public class Assignment {
         System.out.println("Enter the file name or the full path to the instructions file (leave blank for default): ");
         fileName = input.nextLine();
 
-        // If the user doesn't provide a path, use the default file name "assignment_instructions.txt"
+        // If the user doesn't provide a path, use the default path
         if (fileName.trim().isEmpty()) {
-            fileName = "assignment_instructions.txt";  // Default file in the same folder as the executable
+            // Set the default path from where file is searched
+            fileName = "C:/Users/38020001/git/CS30P3F2024/chapter11/src/skillbuilders/assignment_instructions.txt";
         }
 
         File instructionsFile = new File(fileName);
+
+        // Print the absolute path for debugging
+        System.out.println("Looking for file at: " + instructionsFile.getAbsolutePath());
 
         // Check if the file exists
         if (!instructionsFile.exists()) {

@@ -24,11 +24,21 @@ public class StatsP2 {
         Scanner input = new Scanner(System.in);
 
         try {
-            // Prompt for file name and number of student scores
-            System.out.println("Enter the name of the file to create (e.g., test1.txt): ");
+            // Prompt for file name
+            System.out.println("Enter the name of the file to create or full path (leave blank for default stats.txt): ");
             String fileName = input.nextLine();
+
+            // If no file name is provided, use a default file path
+            if (fileName.trim().isEmpty()) {
+                fileName = "C:/Users/38020001/git/CS30P3F2024/chapter11/src/skillbuilders/stats.txt";
+            }
+
             dataFile = new File(fileName);
 
+            // Print the absolute path for debugging
+            System.out.println("Writing to file at: " + dataFile.getAbsolutePath());
+
+            // Ask for the number of student scores
             System.out.println("Enter the number of student grades to input: ");
             int numGrades = input.nextInt();
             input.nextLine();  // Consume the newline
