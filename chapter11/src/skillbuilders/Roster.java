@@ -12,20 +12,29 @@ public class Roster {
         System.out.println("Enter the name of the file to store the student roster (leave blank for default 'roster.txt'): ");
         fileName = input.nextLine();
 
-        // If the user doesn't provide a path, use the default file name "roster.txt"
+        // Default directory path
+        String defaultDirectory = "C:/Users/38020001/git/CS30P3F2024/chapter11/src/skillbuilders/";
+
+        // If the user doesn't provide a file name, use the default "roster.txt"
         if (fileName.trim().isEmpty()) {
-            fileName = "C:/Users/38020001/git/CS30P3F2024/chapter11/src/skillbuilders/roster.txt";  // Default file name
+            fileName = "roster.txt";  // Default file name
         }
 
-        // Create the file object
-        File rosterFile = new File(fileName);
+        // Combine the directory and file name
+        File rosterFile = new File(defaultDirectory + fileName);
 
         // Print the absolute path for debugging
         System.out.println("Saving to file at: " + rosterFile.getAbsolutePath());
 
-        // Check if the file already exists
-        if (rosterFile.exists()) {
-            System.out.println("File already exists. It will be overwritten.");
+        // Check if the file exists, if not, create a new file
+        try {
+            if (rosterFile.createNewFile()) {
+                System.out.println("File \"" + fileName + "\" does not exist, creating a new file.");
+            } else {
+                System.out.println("File \"" + fileName + "\" already exists. It will be overwritten.");
+            }
+        } catch (IOException e) {
+            System.err.println("An error occurred while creating the file: " + e.getMessage());
         }
 
         int numStudents;

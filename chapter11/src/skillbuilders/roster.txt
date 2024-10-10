@@ -1,3 +1,2 @@
-firstname1 lastname1
-firstname2 lastname2
-firstname3 lastname3
+jane doe
+john smith
