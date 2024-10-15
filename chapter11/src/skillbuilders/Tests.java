@@ -1,6 +1,6 @@
 
 
-/* Reserved for testing functions; not an actual skillbuilder */
+/* Reserved for testing; not an actual skillbuilder */
 
 package skillbuilders;
 

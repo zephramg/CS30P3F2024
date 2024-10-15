@@ -1,6 +1,8 @@
 package skillbuilders;
 
-public class StuName {
+import java.io.Serializable;
+
+public class StuName implements Serializable {
     private String firstName;
     private String lastName;
 
