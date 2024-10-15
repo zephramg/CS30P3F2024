@@ -15,9 +15,9 @@ public class Roster {
         // Default directory path
         String defaultDirectory = "C:/Users/38020001/git/CS30P3F2024/chapter11/src/skillbuilders/";
 
-        // If the user doesn't provide a file name, use the default "roster.txt"
+        // If the user doesn't provide a file name, use the default "roster.ser"
         if (fileName.trim().isEmpty()) {
-            fileName = "roster.txt";  // Default file name
+            fileName = "roster.txt";  // Default file name for serialized objects
         }
 
         // Combine the directory and file name
@@ -26,25 +26,25 @@ public class Roster {
         // Print the absolute path for debugging
         System.out.println("Saving to file at: " + rosterFile.getAbsolutePath());
 
-        // Check if the file exists, if not, create a new file
-        try {
-            if (rosterFile.createNewFile()) {
-                System.out.println("File \"" + fileName + "\" does not exist, creating a new file.");
+        int numStudents = 0;
+
+        // Ask the user for the number of students, with validation
+        while (numStudents <= 0) {
+            System.out.println("Enter the number of students in the class (positive number): ");
+            if (input.hasNextInt()) {
+                numStudents = input.nextInt();
+                if (numStudents <= 0) {
+                    System.out.println("Please enter a positive number.");
+                }
             } else {
-                System.out.println("File \"" + fileName + "\" already exists. It will be overwritten.");
+                System.out.println("Invalid input. Please enter a number.");
+                input.next();  // Clear invalid input
             }
-        } catch (IOException e) {
-            System.err.println("An error occurred while creating the file: " + e.getMessage());
         }
-
-        int numStudents;
-
-        // Ask the user for the number of students
-        System.out.println("Enter the number of students in the class: ");
-        numStudents = input.nextInt();
         input.nextLine();  // Clear the newline character
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(rosterFile))) {
+        // Writing serialized objects to the file
+        try (ObjectOutputStream objectOut = new ObjectOutputStream(new FileOutputStream(rosterFile))) {
             // Loop through to collect student names
             for (int i = 1; i <= numStudents; i++) {
                 System.out.println("Enter first name of student " + i + ": ");
@@ -56,9 +56,8 @@ public class Roster {
                 // Create a StuName object
                 StuName student = new StuName(firstName, lastName);
 
-                // Write the student's full name to the file
-                writer.write(student.toString());
-                writer.newLine();
+                // Write the serialized StuName object to the file
+                objectOut.writeObject(student);
             }
 
             System.out.println("All students have been written to " + fileName + ".");
@@ -68,12 +67,12 @@ public class Roster {
 
         // Display the roster from the file
         System.out.println("\n--- Class Roster ---");
-        try (BufferedReader reader = new BufferedReader(new FileReader(rosterFile))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);  // Display each student's name
+        try (ObjectInputStream objectIn = new ObjectInputStream(new FileInputStream(rosterFile))) {
+            for (int i = 1; i <= numStudents; i++) {
+                StuName student = (StuName) objectIn.readObject();  // Deserialize the object
+                System.out.println(student);  // Display each student's name
             }
-        } catch (IOException e) {
+        } catch (IOException | ClassNotFoundException e) {
             System.err.println("An error occurred while reading the file: " + e.getMessage());
         }
 

@@ -3,6 +3,8 @@ package skillbuilders;
 import java.io.Serializable;
 
 public class StuName implements Serializable {
+    private static final long serialVersionUID = 1L;  // Serial version ID for version control
+
     private String firstName;
     private String lastName;
 
@@ -22,6 +24,7 @@ public class StuName implements Serializable {
     }
 
     // Override toString() to display the full name
+    @Override
     public String toString() {
         return firstName + " " + lastName;
     }
