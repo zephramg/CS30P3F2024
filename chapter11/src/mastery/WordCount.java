@@ -1,3 +1,16 @@
+/*
+
+Program: WordCount.java          Last Date of this Revision: October 15, 2024
+
+Purpose: An application that reads words off of a source text file and displays the number of words and the average word length.
+
+Author: Zephram Gilson 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 package mastery;
 
 import java.io.*;
@@ -47,3 +60,11 @@ public class WordCount {
         }
     }
 }
+
+/* Screen Dump (Words in source.txt are: [chromatography open-mouthed mute])
+  
+  	Number of words: 4
+	Average word length: 7.25
+  
+ *  */
+ */
