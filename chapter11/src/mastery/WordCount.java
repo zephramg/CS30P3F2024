@@ -1,5 +1,4 @@
 /*
-
 Program: WordCount.java          Last Date of this Revision: October 15, 2024
 
 Purpose: An application that reads words off of a source text file and displays the number of words and the average word length.
@@ -7,16 +6,12 @@ Purpose: An application that reads words off of a source text file and displays 
 Author: Zephram Gilson 
 School: CHHS
 Course: Computer Science 30
- 
-
 */
 
 package mastery;
 
 import java.io.*;
 import java.util.Scanner;
-
-// TODO fix words needing to be on the same line
 
 public class WordCount {
     public static void main(String[] args) {
@@ -30,16 +25,24 @@ public class WordCount {
             // Create a Scanner to read the file
             Scanner fileScanner = new Scanner(new File(filePath));
             
-            // Use a regular expression to match words
+            // Process the file, word by word
             while (fileScanner.hasNext()) {
-                // Read the next word (sequence of letters)
-                String word = fileScanner.findInLine("[a-zA-Z]+");
-                if (word != null) {
-                    wordCount++;
-                    totalWordLength += word.length();
-                } else {
-                    // Skip non-letter characters
-                    fileScanner.next();
+                // Read the next sequence of characters (including hyphenated words)
+                String word = fileScanner.next();
+                
+                // Split by hyphen to treat hyphenated words as separate words
+                String[] splitWords = word.split("-");
+
+                // Iterate over the split words
+                for (String splitWord : splitWords) {
+                    // Remove any non-letter characters (punctuation, numbers, etc.)
+                    splitWord = splitWord.replaceAll("[^a-zA-Z]", "");
+                    
+                    // If the split word is a valid word (not empty), count it
+                    if (!splitWord.isEmpty()) {
+                        wordCount++;
+                        totalWordLength += splitWord.length();
+                    }
                 }
             }
             
@@ -50,7 +53,7 @@ public class WordCount {
             System.out.println("Number of words: " + wordCount);
             if (wordCount > 0) {
                 double averageWordLength = (double) totalWordLength / wordCount;
-                System.out.printf("Average word length: %.2f%n", averageWordLength);
+                System.out.printf("Average word length: " + averageWordLength);
             } else {
                 System.out.println("No words found.");
             }
@@ -61,10 +64,11 @@ public class WordCount {
     }
 }
 
+
 /* Screen Dump (Words in source.txt are: [chromatography open-mouthed mute])
   
   	Number of words: 4
 	Average word length: 7.25
   
- *  */
  */
+ 
