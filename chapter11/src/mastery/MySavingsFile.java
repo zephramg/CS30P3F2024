@@ -1,3 +1,17 @@
+/*
+
+Program: MySavingsFile.java          Last Date of this Revision: October 17, 2024
+
+Purpose: An application that adds file features to the previous MySavings.java program that
+allows the bank data to be saved across separate runs of the program.
+
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 package mastery;
 
 import java.io.*;
@@ -96,3 +110,65 @@ public class MySavingsFile {
         }
     }
 }
+
+/* Screen Dump
+  
+  Context: 4 quarters had been previously added to the bank by the user on a separate run of the program.
+  
+  --- My Savings Menu ---
+1. Add Pennies
+2. Add Nickels
+3. Add Dimes
+4. Add Quarters
+5. Remove Pennies
+6. Remove Nickels
+7. Remove Dimes
+8. Remove Quarters
+9. View Total Savings
+0. Exit and Save
+Enter your choice: 9
+Total Savings: $1.00
+
+--- My Savings Menu ---
+1. Add Pennies
+2. Add Nickels
+3. Add Dimes
+4. Add Quarters
+5. Remove Pennies
+6. Remove Nickels
+7. Remove Dimes
+8. Remove Quarters
+9. View Total Savings
+0. Exit and Save
+Enter your choice: 6
+Enter the number of nickels to remove: 1
+
+--- My Savings Menu ---
+1. Add Pennies
+2. Add Nickels
+3. Add Dimes
+4. Add Quarters
+5. Remove Pennies
+6. Remove Nickels
+7. Remove Dimes
+8. Remove Quarters
+9. View Total Savings
+0. Exit and Save
+Enter your choice: 9
+Total Savings: $1.00
+
+--- My Savings Menu ---
+1. Add Pennies
+2. Add Nickels
+3. Add Dimes
+4. Add Quarters
+5. Remove Pennies
+6. Remove Nickels
+7. Remove Dimes
+8. Remove Quarters
+9. View Total Savings
+0. Exit and Save
+Enter your choice: 
+ 
+ 
+ */
