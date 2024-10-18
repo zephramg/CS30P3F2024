@@ -1,4 +1,4 @@
-/* PiggyBank method for MySavingsFile.java */
+/* for MySavingsFile.java */
 
 package mastery;
 
