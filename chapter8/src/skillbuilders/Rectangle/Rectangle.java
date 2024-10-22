@@ -1,4 +1,4 @@
-package skillbuilders;
+package skillbuilders.Rectangle;
 
 public class Rectangle implements Comparable<Rectangle>, ComparableArea {
     private double length;

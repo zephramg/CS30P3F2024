@@ -1,4 +1,4 @@
-package skillbuilders;
+package skillbuilders.Puck;
 
 /* Modified Puck (P2) Class */
 

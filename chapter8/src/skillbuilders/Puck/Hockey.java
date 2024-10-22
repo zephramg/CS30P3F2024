@@ -1,4 +1,4 @@
-package skillbuilders;
+package skillbuilders.Puck;
 
 /* Modified version of Hockey class to account for P2 of puck. */
 

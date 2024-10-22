@@ -1,4 +1,4 @@
-package skillbuilders;
+package skillbuilders.Puck;
 
 /**
  * Circle class.

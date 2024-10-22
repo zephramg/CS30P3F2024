@@ -1,4 +1,4 @@
-package skillbuilders;
+package skillbuilders.Rectangle;
 
 import java.util.Arrays;
 
