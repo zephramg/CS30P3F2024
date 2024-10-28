@@ -1,7 +1,7 @@
 package mastery.CreateVehicle;
 
 public class Car extends Vehicle {
-    private String bodyStyle;  // Example of an additional member for a car
+    private String bodyStyle;  // Additional member for a car
 
     // Constructor
     public Car(double fuelEconomyCity, double fuelEconomyHwy, int seatingCapacity, double cargoVolume, String bodyStyle) {
