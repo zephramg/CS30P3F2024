@@ -33,7 +33,7 @@ public abstract class Vehicle {
     public double getCargoVolume() {
         return cargoVolume;
     }
-
+ 
     // toString method to display common details
     @Override
     public String toString() {

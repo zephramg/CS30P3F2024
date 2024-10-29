@@ -17,7 +17,7 @@ Course: Computer Science 30
 
 */
 
- 
+
 package mastery.UniEmployees;
 
 public class Faculty extends UEmployee {

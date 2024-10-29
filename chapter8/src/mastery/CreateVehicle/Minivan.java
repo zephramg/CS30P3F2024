@@ -26,4 +26,3 @@ public class Minivan extends Vehicle {
         return super.toString() + ", Rear Entertainment System: " + (hasRearEntertainmentSystem ? "Yes" : "No");
     }
 }
- 

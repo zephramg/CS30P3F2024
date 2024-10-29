@@ -21,4 +21,3 @@ public class Car extends Vehicle {
         return super.toString() + ", Body Style: " + bodyStyle;
     }
 }
- 

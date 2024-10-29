@@ -25,4 +25,4 @@ public class Truck extends Vehicle {
     public String toString() {
         return super.toString() + ", Towing Capacity: " + towingCapacity + " lbs";
     }
-} 
+}
