@@ -22,7 +22,7 @@ public class Store
 	{
 		Manager emp1 = new Manager("Bob", "Smitht", 100000);
 		Associate emp2 = new Associate("Shaquel", "Amor", 16.00);
-		
+		 
 		Scanner input = new Scanner(System.in);
 		
 		String action;

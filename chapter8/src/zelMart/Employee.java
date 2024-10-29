@@ -19,4 +19,4 @@ public abstract class Employee
 	
 	abstract double pay(double period);
 	
-}
+} 

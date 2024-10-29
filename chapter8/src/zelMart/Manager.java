@@ -21,7 +21,7 @@ public class Manager extends Employee
 	public double pay(double weeks) 
 	{
 		double payEarned;
-		
+		 
 		payEarned = yearlySalary / 52 * weeks;
 		
 		return payEarned;
