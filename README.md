@@ -1,6 +1,4 @@
-# CS30 fall 2024 - Zephram Gilson
-
-CS30 fall 2024.
+# CS30 Fall 2024 - Zephram Gilson
 
 - CSE3010: Computer Science 3
 - CSE2130: File Structures and Exception Handling
