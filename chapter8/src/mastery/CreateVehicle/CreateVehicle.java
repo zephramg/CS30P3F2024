@@ -24,4 +24,4 @@ public class CreateVehicle {
             System.out.println("The minivan does not have a rear entertainment system.");
         }
     }
-}
+} 

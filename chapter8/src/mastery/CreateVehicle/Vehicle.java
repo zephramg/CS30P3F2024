@@ -28,7 +28,7 @@ public abstract class Vehicle {
 
     public int getSeatingCapacity() {
         return seatingCapacity;
-    }
+    } 
 
     public double getCargoVolume() {
         return cargoVolume;
