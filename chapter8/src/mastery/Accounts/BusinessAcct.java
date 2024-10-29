@@ -16,4 +16,4 @@ public class BusinessAcct extends Account {
             System.out.println("Balance below minimum. Penalty of $" + PENALTY + " applied.");
         }
     }
-}
+} 

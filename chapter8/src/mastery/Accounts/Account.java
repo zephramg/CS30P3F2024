@@ -6,7 +6,7 @@ public class Account {
     private double balance;
     private Customer cust;
     private String acctID;
-
+ 
     /**
      * Constructor with initial balance and customer details including address
      * pre: none

@@ -14,7 +14,7 @@ public class PersonalAcct extends Account {
         if (getBalance() < MIN_BALANCE) {
             super.withdrawal(PENALTY);
             System.out.println("Balance below minimum. Penalty of $" + PENALTY + " applied.");
-        }
+        } 
     }
 }
 
