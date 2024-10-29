@@ -30,7 +30,7 @@ public class Store
 		double payArg;
 		
 		Employee emp = emp1;
-		
+	
 		do
 		{
 			System.out.println("\n (E)mployee \\"

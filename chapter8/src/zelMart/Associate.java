@@ -14,7 +14,7 @@ public class Associate extends Employee
 	
 	public double pay(double hours) 
 	{ 
-		
+	
 		double payEarned; 
 		
 		if(hours > 40) 

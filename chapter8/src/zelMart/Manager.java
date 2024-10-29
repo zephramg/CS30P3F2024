@@ -26,7 +26,7 @@ public class Manager extends Employee
 		
 		return payEarned;
 	}
-	
+
 	// Return the employee name, title, and salary.
 	public String toString() 
 	{
