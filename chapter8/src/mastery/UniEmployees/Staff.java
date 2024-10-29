@@ -1,3 +1,23 @@
+/*
+
+Program: Staff.java          Last Date of this Revision: October 29, 2024
+
+Purpose: Subclass of UEmployee, representing university staff with 
+an additional job title attribute. Class is instantiated in 
+the client application (University.java).
+
+Class includes a constructor to initialize staff attributes and 
+an overridden toString() method to display the job title along with 
+other employee details.
+
+
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+
+*/
+
+
 package mastery.UniEmployees;
 
 public class Staff extends UEmployee {

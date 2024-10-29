@@ -16,5 +16,12 @@ public class CreateVehicle {
         Minivan minivan = new Minivan(20.0, 28.0, 7, 40.0, true);
         minivan.displayVehicleType();
         System.out.println(minivan);
+
+        // Call the hasRearEntertainmentSystem method directly
+        if (minivan.hasRearEntertainmentSystem()) {
+            System.out.println("The minivan is equipped with a rear entertainment system.");
+        } else {
+            System.out.println("The minivan does not have a rear entertainment system.");
+        }
     }
 }

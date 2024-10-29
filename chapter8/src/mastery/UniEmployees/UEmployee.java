@@ -1,3 +1,19 @@
+/*
+
+Program: UEmployee.java          Last Date of this Revision: October 29, 2024
+
+Purpose: Base class for university employees, representing a general 
+university employee with attributes such as name and salary. 
+
+Class is inherited in the client application University.java.
+
+
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+
+*/
+
 package mastery.UniEmployees;
 
 public class UEmployee {

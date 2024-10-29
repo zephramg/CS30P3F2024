@@ -15,11 +15,6 @@ public class Car extends Vehicle {
         System.out.println("This is a Car.");
     }
 
-    // Additional method specific to Car
-    public String getBodyStyle() {
-        return bodyStyle;
-    }
-
     // toString method to display car-specific details
     @Override
     public String toString() {
