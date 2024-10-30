@@ -1,3 +1,17 @@
+/*
+
+Program: Vehicle.java          Last Date of this Revision: October 29, 2024
+
+Purpose: Abstract superclass representing a general vehicle. Includes common properties such as 
+fuel economy (city and highway), seating capacity, and cargo volume, and provides an abstract 
+method displayVehicleType() to be implemented by subclasses.
+
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+
+*/
+
 package mastery.CreateVehicle;
 
 public abstract class Vehicle {

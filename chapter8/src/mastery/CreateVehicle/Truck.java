@@ -1,3 +1,16 @@
+/*
+
+Program: Truck.java          Last Date of this Revision: October 29, 2024
+
+Purpose: Subclass of Vehicle representing a truck, with additional property for towing capacity. 
+Implements the abstract method displayVehicleType() and provides a toString() method to display truck-specific details.
+
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+
+*/
+
 package mastery.CreateVehicle;
 
 public class Truck extends Vehicle {

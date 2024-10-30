@@ -1,3 +1,16 @@
+/*
+
+Program: Minivan.java          Last Date of this Revision: October 29, 2024
+
+Purpose: Subclass of Vehicle representing a minivan, including an additional property indicating 
+if it has a rear entertainment system. Implements the displayVehicleType() method and custom toString() for minivan-specific info.
+
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+
+*/
+
 package mastery.CreateVehicle;
 
 public class Minivan extends Vehicle {

@@ -1,3 +1,17 @@
+/*
+
+Program: CreateVehicle.java          Last Date of this Revision: October 29, 2024
+
+Purpose: Client application to demonstrate the functionality of Vehicle and its subclasses 
+(Car, Truck, and Minivan). Instantiates objects of each subclass, displaying their properties 
+and vehicle type, as well as specific features like towing capacity and rear entertainment system availability.
+
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+
+*/
+
 package mastery.CreateVehicle;
 
 public class CreateVehicle {
@@ -17,7 +31,7 @@ public class CreateVehicle {
         minivan.displayVehicleType();
         System.out.println(minivan);
 
-        // Call the hasRearEntertainmentSystem method directly
+        // Display whether the minivan has a rear entertainment system
         if (minivan.hasRearEntertainmentSystem()) {
             System.out.println("The minivan is equipped with a rear entertainment system.");
         } else {
@@ -25,3 +39,15 @@ public class CreateVehicle {
         }
     }
 }
+
+/* Screen Dump
+
+This is a Car.
+Fuel Economy (City): 25.0 mpg, Fuel Economy (Highway): 35.0 mpg, Seating Capacity: 5, Cargo Volume: 15.0 cubic feet, Body Style: Sedan
+This is a Truck.
+Fuel Economy (City): 15.0 mpg, Fuel Economy (Highway): 20.0 mpg, Seating Capacity: 3, Cargo Volume: 30.0 cubic feet, Towing Capacity: 10000.0 lbs
+This is a Minivan.
+Fuel Economy (City): 20.0 mpg, Fuel Economy (Highway): 28.0 mpg, Seating Capacity: 7, Cargo Volume: 40.0 cubic feet, Rear Entertainment System: Yes
+The minivan is equipped with a rear entertainment system.
+
+*/

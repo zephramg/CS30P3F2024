@@ -1,3 +1,16 @@
+/*
+
+Program: Car.java          Last Date of this Revision: October 29, 2024
+
+Purpose: Subclass of Vehicle representing a car with a specific body style. Implements the 
+abstract method displayVehicleType() and provides a detailed toString() for car-specific information.
+
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+
+*/
+
 package mastery.CreateVehicle;
 
 public class Car extends Vehicle {
