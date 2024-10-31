@@ -1,5 +1,4 @@
-# Ch. 8 CSE3130 - Object Oriented Programming 2
-### Zephram Gilson
+# Ch. 8 CSE3130 - Object Oriented Programming 2 \n ### Zephram Gilson
 
 > **Skillbuilders**
 
