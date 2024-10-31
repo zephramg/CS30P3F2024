@@ -1,8 +1,36 @@
-Chapter 8
+**Chapter 8**
 
-Skillbuilders:
+**Skillbuilders:**
+
+_Puck_
+- Circle
+- Disk
+- Hockey
 - Puck
-- Rectangle
 
-Mastery:
-- Accounts
+_Rectangle_
+- Rectangle
+- rect
+- ComparableArea
+
+**Mastery:**
+
+_Accounts_
+- Account
+- Customer
+- PersonalAcct
+- BusinessAcct
+- AccountsRun
+
+_UniEmployees_
+- Faculty
+- Staff
+- UEmployeee
+- University
+
+_CreateVehicle_
+- Car
+- Minivan
+- Truck
+- Vehicle
+- CreateVehicle
