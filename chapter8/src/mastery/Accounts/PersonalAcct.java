@@ -13,7 +13,7 @@ Course: Computer Science 30
 */
  
 package mastery.Accounts;
-
+ 
 public class PersonalAcct extends Account {
     private static final double MIN_BALANCE = 100.0;
     private static final double PENALTY = 2.0;
