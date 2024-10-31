@@ -2,33 +2,33 @@
 
 **Skillbuilders**
 
-### Puck
-- Circle
-- Disk
-- Hockey
-- Puck
+- **Puck**
+    - Circle
+    - Disk
+    - Hockey
+    - Puck
 
-### Rectangle
-- Rectangle
-- rect
-- ComparableArea
+- **Rectangle**
+  - Rectangle
+  - rect
+  - ComparableArea
 
 **Mastery**
 
-### Accounts
+- **Accounts**
 - Account
 - Customer
 - PersonalAcct
 - BusinessAcct
 - AccountsRun
 
-### UniEmployees
+- **UniEmployees**
 - Faculty
 - Staff
 - UEmployeee
 - University
 
-### CreateVehicle
+- **CreateVehicle**
 - Car
 - Minivan
 - Truck
