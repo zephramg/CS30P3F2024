@@ -1,6 +1,6 @@
 # Ch. 8 CSE3130 - Object Oriented Programming 2
 
-**Skillbuilders**
+> **Skillbuilders**
 
 - **Puck**
     - Circle
@@ -13,7 +13,7 @@
     - rect
     - ComparableArea
 
-**Mastery**
+> **Mastery**
 
 - **Accounts**
     - Account
