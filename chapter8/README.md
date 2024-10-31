@@ -1,5 +1,5 @@
 # Ch. 8 CSE3130 - Object Oriented Programming 2
-Zephram Gilson - CS30 Fall 2024
+***Zephram Gilson - CS30 Fall 2024***
 > **Skillbuilders**
 
 - **Puck**
