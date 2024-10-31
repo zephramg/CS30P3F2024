@@ -1,3 +1,17 @@
+/*
+
+Program: PersonalAcct.java           Last Date of this Revision: October 31, 2024
+
+Purpose: Subclass of Account for personal bank accounts with specific minimum balance 
+and penalty requirements. Overrides the withdrawal method to apply a penalty when 
+balance falls below the minimum.
+
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+
+*/
+
 package mastery.Accounts;
 
 public class PersonalAcct extends Account {

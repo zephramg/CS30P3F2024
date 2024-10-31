@@ -1,6 +1,15 @@
-/**
- * Customer class.
- */
+/*
+
+Program: Customer.java           Last Date of this Revision: October 31, 2024
+
+Purpose: Class representing a customer with personal information including 
+name and address details. Allows updates to address information and a custom toString.
+
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+
+*/
 
 package mastery.Accounts;
 

@@ -1,3 +1,16 @@
+/*
+
+Program: Account.java           Last Date of this Revision: October 31, 2024
+
+Purpose: Base class for a bank account, handling balance, customer details, and account ID.
+Includes methods for deposit, withdrawal, address change, and account comparison.
+
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+
+*/
+
 package mastery.Accounts;
 
 import java.text.NumberFormat;
