@@ -7,7 +7,7 @@ public class Associate extends Employee
 	public Associate(String fn, String ln, double r)
 	{
 		super(fn, ln);
-		hourlyPayRate = r;
+		hourlyPayRate = r; 
 	}
 	
 	public double pay(double hours)

@@ -7,7 +7,7 @@ public abstract class Employee
 	//Constructor method for Employee 
 	public Employee(String fN, String lN)
 	{
-		firstName = fN;
+		firstName = fN; 
 		lastName = lN;
 	}
 	
