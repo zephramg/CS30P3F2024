@@ -2,35 +2,20 @@
 ***Zephram Gilson - CS30 Fall 2024***
 > **Skillbuilders**
 
-- **Puck**
-    - Circle
-    - Disk
-    - Hockey
-    - Puck
+- **Stack2**
+    - Stack2
+    - Stack2Demo
 
-- **Rectangle**
-    - Rectangle
-    - rect
-    - ComparableArea
+- **Stack3**
+    - Stack3
+    - Stack3Demo
+
+- **Queue2**
+    - Queue2
+    - Queue2Demo
+ 
+- **Queue3**
+    - Queue3
+    - Queue3Demo
 
 > **Mastery**
-
-- **Accounts**
-    - Account
-    - Customer
-    - PersonalAcct
-    - BusinessAcct
-    - AccountsRun
-
-- **UniEmployees**
-    - Faculty
-    - Staff
-    - UEmployeee
-    - University
-
-- **CreateVehicle**
-    - Car
-    - Minivan
-    - Truck
-    - Vehicle
-    - CreateVehicle
