@@ -17,5 +17,3 @@
 - **Queue3**
     - Queue3
     - Queue3Demo
-
-> **Mastery**
