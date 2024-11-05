@@ -1,6 +1,6 @@
 package skillbuilders.LinkedList;
 
-public class LinkedList 
+public class LinkedList  
 {
 	private Node head;
 	

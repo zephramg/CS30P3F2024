@@ -20,7 +20,7 @@ public class Node
 	
 	public void setNext(Node newNode) {
 		next = newNode;
-	}
+	} 
 	
 
 	public String getData() {
