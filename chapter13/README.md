@@ -48,15 +48,6 @@
     - `Queue3`
     - `Queue3Demo` — A demonstration of `Queue3` functionality.
 
----
-
-### 🛠️ Usage
-
-1. Clone the repository and navigate to the project directory.
-2. Each module has a corresponding demo class (`Stack2Demo`, `Stack3Demo`, etc.) that illustrates usage.
-3. Run the demo files to observe how each stack or queue implementation functions.
-
----
 
 ### 📚 Learning Outcomes
 
