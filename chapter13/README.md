@@ -1,4 +1,4 @@
-# Ch. 13 CSE3110 - Iterative Algorithms
+# Ch. 13 CSE3110 - Iterative Algorithms 1
 **Zephram Gilson - CS30 Fall 2024**
 
 ---
