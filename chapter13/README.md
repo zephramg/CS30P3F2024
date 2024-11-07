@@ -1,7 +1,7 @@
 # Ch. 13 CSE3110 - Iterative Algorithms 1
 **Zephram Gilson - CS30 Fall 2024**
 
-## 📂 Overview of Skillbuilders and Mastery Projects
+### 📂 Overview of Skillbuilders and Mastery Projects
 ---
 > ### **Skillbuilders**
 ---
