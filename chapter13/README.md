@@ -47,7 +47,7 @@
     - `LinkedListDemo` — Demonstrates the functionality of `LinkedList`.
 
 ---
-> Mastery
+> **Mastery** (includes reflection logs and error logs)
 ---
 - **StackList**  
   *Implementation of a stack using a linked list.*  
