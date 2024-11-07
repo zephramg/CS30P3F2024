@@ -31,6 +31,6 @@ public class ReverseList {
         }
         
         // Close the scanner to prevent resource leak
-        scanner.close();
+        scanner.close(); 
     }
 }
