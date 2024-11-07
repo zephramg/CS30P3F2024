@@ -55,7 +55,13 @@
   - **Classes**:
     - `StackList` — Stack implementation with methods specific to linked list-backed stacks.
     - `StackListDemo` — Demonstrates stack operations and exception handling for an empty stack scenario.
+     
+- **ReverseList**  
+  *Reverses a list of integers using a stack.*  
+  This program uses a `Stack` to reverse the order of integers entered by the user. The user can enter up to 10 numbers or stop early by entering `999`.
 
+  - **Classes**:
+    - `ReverseList` — Implements the logic to read up to 10 integers, store them in a stack, and then reverse the order of the numbers by popping from the stack.
 ---
 
 ### 📚 Learning Outcomes
