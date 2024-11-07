@@ -3,7 +3,7 @@
 
 ### 📂 Overview of Skillbuilders and Mastery Projects
 ---
-> ### 💡 **Skillbuilders** - Stack, Queue, and Linked List implementation
+> ### 💡 **Skillbuilders** - ## Stack, Queue, and Linked List implementation
 ---
 - **Stack2**  
   *Implementation of a stack data structure for `Object` type.*  
