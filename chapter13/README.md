@@ -3,7 +3,7 @@
 
 ### 📂 Overview of Skillbuilders and Mastery Projects
 ---
-> **Skillbuilders**
+> #### **Skillbuilders**
 ---
 - **Stack2**  
   *Implementation of a stack data structure for `Object` type.*  
@@ -47,7 +47,7 @@
     - `LinkedListDemo` — Demonstrates the functionality of `LinkedList`.
 
 ---
-> **Mastery** (includes reflection logs and error logs)
+> #### **Mastery** (includes reflection logs and error logs)
 ---
 - **StackList**  
   *Implementation of a stack using a linked list.*  
