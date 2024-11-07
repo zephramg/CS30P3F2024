@@ -48,6 +48,7 @@
     - `Queue3`
     - `Queue3Demo` — A demonstration of `Queue3` functionality.
 
+---
 
 ### 📚 Learning Outcomes
 
