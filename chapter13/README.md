@@ -3,7 +3,7 @@
 
 ### 📂 Overview of Skillbuilders and Mastery Projects
 ---
-> ### **Skillbuilders**
+> ### 💡 **Skillbuilders**
 ---
 - **Stack2**  
   *Implementation of a stack data structure for `Object` type.*  
