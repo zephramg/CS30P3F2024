@@ -3,14 +3,14 @@
 
 ---
 
-> **Skillbuilders Collection**  
-> A series of stack and queue implementations demonstrating iterative algorithms in Java.
+> **Skillbuilders and Mastery Collections**  
+> A series of stack, queue, and linked list implementations demonstrating iterative algorithms in Java.
 
 ---
 
-### 📂 Modules Overview
+### 📂 Collections Overview
 
-#### Stack Implementations
+#### Skillbuilders
 
 - **Stack2**  
   *Implementation of a stack data structure for `Object` type.*  
@@ -18,35 +18,51 @@
   
   - **Classes**:
     - `Stack2`
-    - `Stack2Demo` — A demonstration of `Stack2` functionality.
+    - `Stack2Demo` — Demonstrates the functionality of `Stack2`.
 
 - **Stack3**  
   *Stack implementation using an ArrayList.*  
-  This variation of stack uses an `ArrayList` as the underlying storage structure.
+  This variation of stack uses an `ArrayList` for internal storage.
   
   - **Classes**:
     - `Stack3`
-    - `Stack3Demo` — A demonstration of `Stack3` functionality.
-
----
-
-#### Queue Implementations
+    - `Stack3Demo` — Demonstrates the functionality of `Stack3`.
 
 - **Queue2**  
   *Queue data structure for `Object` type.*  
-  Like `Stack2`, `Queue2` can hold objects of any type due to its use of the `Object` superclass.
+  Similar to `Stack2`, `Queue2` can hold objects of any type due to its use of the `Object` superclass.
   
   - **Classes**:
     - `Queue2`
-    - `Queue2Demo` — A demonstration of `Queue2` functionality.
+    - `Queue2Demo` — Demonstrates the functionality of `Queue2`.
 
 - **Queue3**  
   *Queue implementation using an ArrayList.*  
-  This variation of queue is built on an `ArrayList` for its internal storage.
+  This variation of queue is built on an `ArrayList` for internal storage.
   
   - **Classes**:
     - `Queue3`
-    - `Queue3Demo` — A demonstration of `Queue3` functionality.
+    - `Queue3Demo` — Demonstrates the functionality of `Queue3`.
+
+- **LinkedList**  
+  *Implementation of a linked list data structure with basic operations.*  
+  The `LinkedList` class allows adding, removing, and retrieving elements.
+  
+  - **Classes**:
+    - `LinkedList` — Provides methods to add items at the front or end, remove items, get size, and clear the list.
+    - `LinkedListDemo` — Demonstrates the functionality of `LinkedList`.
+
+---
+
+#### Mastery
+
+- **StackList**  
+  *Implementation of a stack using a linked list.*  
+  This stack variation uses a linked list structure for dynamic storage and includes standard stack operations (`push`, `pop`, `peek`, and `isEmpty`).
+  
+  - **Classes**:
+    - `StackList` — Stack implementation with methods specific to linked list-backed stacks.
+    - `StackListDemo` — Demonstrates stack operations and exception handling for an empty stack scenario.
 
 ---
 
@@ -54,7 +70,8 @@
 
 This project covers:
 - Iterative algorithm development.
-- Data structure fundamentals using stacks and queues.
+- Data structure fundamentals using stacks, queues, and linked lists.
 - Use of `Object` superclass for flexible data storage.
+- Comparison of array-based and linked list-based data structures.
 
 ---
