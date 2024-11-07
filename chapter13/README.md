@@ -2,9 +2,9 @@
 **Zephram Gilson - CS30 Fall 2024**
 
 ### 📂 Overview of Skillbuilders and Mastery Projects
----
+
 > ### **Skillbuilders**
----
+
 - **Stack2**  
   *Implementation of a stack data structure for `Object` type.*  
   The `Stack2` class can store objects of any class, as `Object` is the superclass of all classes in Java.
