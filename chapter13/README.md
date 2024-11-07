@@ -46,9 +46,9 @@
     - `Node` — Represents each element in `LinkedList`, storing data and a reference to the next node.
     - `LinkedListDemo` — Demonstrates the functionality of `LinkedList`.
 
----
+
 > ### **Mastery** (includes reflection logs and error logs)
----
+
 - **StackList**  
   *Implementation of a stack using a linked list.*  
   This stack variation uses a linked list structure for dynamic storage and includes standard stack operations (`push`, `pop`, `peek`, and `isEmpty`).
