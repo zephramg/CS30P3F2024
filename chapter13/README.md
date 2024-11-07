@@ -39,10 +39,11 @@
 
 - **LinkedList**  
   *Implementation of a linked list data structure with basic operations.*  
-  The `LinkedList` class allows adding, removing, and retrieving elements.
+  The `LinkedList` class allows adding, removing, and retrieving elements. The `Node` class, nested within `LinkedList`, represents each element in the list and stores data along with a reference to the next node.
   
   - **Classes**:
     - `LinkedList` — Provides methods to add items at the front or end, remove items, get size, and clear the list.
+    - `Node` — Represents each element in `LinkedList`, storing data and a reference to the next node.
     - `LinkedListDemo` — Demonstrates the functionality of `LinkedList`.
 
 ---
