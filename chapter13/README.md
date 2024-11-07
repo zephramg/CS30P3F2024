@@ -1,14 +1,7 @@
 # Ch. 13 CSE3110 - Iterative Algorithms 1
 **Zephram Gilson - CS30 Fall 2024**
 
----
-
-> **Skillbuilders and Mastery Collections**  
-> A series of stack, queue, and linked list implementations demonstrating iterative algorithms in Java.
-
----
-
-### 📂 Collections Overview
+### 📂 Overview
 ---
 > **Skillbuilders**
 ---
