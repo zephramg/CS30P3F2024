@@ -3,16 +3,16 @@
 This repository contains course materials, assignments, and projects for the CS30 Fall 2024 semester, covering advanced computer science topics.
 
 ### CSE3010: Computer Science 3
-- **Description**: This course explores advanced concepts in both hardware and software. Students move from procedural to object-oriented programming (OOP), gaining skills in developing efficient and robust algorithms. Topics include the binary and hexadecimal number systems, von Neumann architecture, and the social implications of computing.
-  
+- **Description**: Explores advanced computer science topics, moving from procedural to object-oriented programming. Covers binary/hexadecimal numbers, basic computer hardware concepts, and the impact of technology on society.
+
 ### CSE2130: File Structures and Exception Handling 1
-- **Description**: Students learn to design, code, and debug programs that store and retrieve data using secondary storage. Emphasis is placed on using derived data structures for efficient file handling and understanding the applications of external files.
+- **Description**: Focuses on using files to store and retrieve data efficiently. Students learn techniques for organizing data in external files and handling file-based problems.
 
 ### CSE3130: Object-Oriented Programming 2
-- **Description**: Building on OOP foundations, this course covers object-oriented design with a focus on the UML approach, class association, abstract classes, and templated classes. Students explore containment, inheritance, and reusability through practical programming exercises.
+- **Description**: Expands on object-oriented programming skills, including class relationships, inheritance, and using UML for design. Encourages creating reusable, efficient code.
 
 ### CSE3110: Iterative Algorithm 1
-- **Description**: Students gain proficiency in iterative data processing algorithms, including binary search, bubble sort, insertion sort, selection sort, and simple merging techniques. The course emphasizes understanding when and how to apply these algorithms for efficient data structure manipulation.
+- **Description**: Covers common iterative algorithms, such as binary search and sorting techniques (bubble, insertion, selection). Teaches how and when to apply these algorithms.
 
 ### CSE3910: CSE Project D
-- **Description**: In this project-based course, students develop project management and design skills. They apply concepts from other CS courses to build projects that are personally relevant, reinforcing their knowledge through hands-on experience.
+- **Description**: A project-based course where students apply skills from other courses to create relevant, practical projects. Builds on design and project management skills.
