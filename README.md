@@ -12,7 +12,7 @@ This repository contains course materials, assignments, and projects for the CS3
 - **Description**: Expands on object-oriented programming skills, including class relationships, inheritance, and using UML for design. Encourages creating reusable, efficient code.
 
 ### CSE3110: Iterative Algorithm 1
-- **Description**: Covers common iterative algorithms, such as binary search and sorting techniques (bubble, insertion, selection). Teaches how and when to apply these algorithms.
+- **Description**: Covers common iterative algorithms, such as binary search and sorting techniques. Teaches how and when to apply these algorithms.
 
 ### CSE3910: CSE Project D
-- **Description**: A project-based course where students apply skills from other courses to create relevant, practical projects. Builds on design and project management skills.
+- **Description**: A project-based credit where students apply skills from other courses to create relevant, practical projects. Builds on design and project management skills.
