@@ -1,9 +1,6 @@
-# CS30 Fall 2024
-Zephram Gilson
+# CS30 P3 Fall 2024 - Zephram Gilson
 
 This repository contains course materials, assignments, and projects for the CS30 Fall 2024 semester, covering advanced computer science topics.
-
-## Courses
 
 ### CSE3010: Computer Science 3
 - **Description**: This course explores advanced concepts in both hardware and software. Students move from procedural to object-oriented programming (OOP), gaining skills in developing efficient and robust algorithms. Topics include the binary and hexadecimal number systems, von Neumann architecture, and the social implications of computing.
