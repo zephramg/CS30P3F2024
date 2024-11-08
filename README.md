@@ -1,4 +1,4 @@
-# CS30 P3 Fall 2024 - Zephram Gilson
+# CS30 Fall 2024 - Zephram Gilson
 
 This repository contains course materials, assignments, and projects for the CS30 Fall 2024 semester, covering advanced computer science topics.
 
