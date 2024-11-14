@@ -7,7 +7,7 @@ public class StackListDemo {
         // Pushing elements onto the stack
         System.out.println("Pushing elements: 10, 20, 30");
         stack.push(10);
-        stack.push(20);
+        stack.push(20); 
         stack.push(30);
 
         // Peeking at the top element

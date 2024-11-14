@@ -38,7 +38,7 @@ public class QueueList {
 
     // Dequeue operation - Removes and returns the item at the front of the queue
     public Object dequeue() {
-        if (isEmpty()) {
+        if (isEmpty()) { 
             throw new IllegalStateException("Queue is empty");
         }
         Object item = front.data;

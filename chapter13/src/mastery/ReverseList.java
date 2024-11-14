@@ -1,4 +1,4 @@
-package mastery;
+package mastery; 
 
 import java.util.Scanner;
 import java.util.Stack;

@@ -32,7 +32,7 @@ public class StackList {
         }
         Object data = top.data;
         top = top.next;
-        return data;
+        return data; 
     }
 
     // Peek operation to view the top element without removing it

@@ -12,7 +12,7 @@ public class QueueListDemo {
         
         System.out.println("Current queue size: " + queue.getSize());  // Expected: 4
         System.out.println("Peek front element: " + queue.peek());      // Expected: A
-        
+         
         System.out.println("\nDequeuing elements:");
         while (!queue.isEmpty()) {
             System.out.println("Dequeued: " + queue.dequeue());
