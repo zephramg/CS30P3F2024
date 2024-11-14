@@ -29,8 +29,6 @@ public class ReverseList {
         while (!stack.isEmpty()) {
             System.out.print(stack.pop() + " ");  // Pop each element to reverse order
         }
-        
-        // Close the scanner to prevent resource leak
         scanner.close(); 
     }
 }
