@@ -20,7 +20,7 @@ public class QueueListDemo {
             if (!queue.isEmpty()) {
                 System.out.println("Peek next front element: " + queue.peek());
             }
-        }
+        } 
         
         // Test dequeue on empty queue 
         try {
