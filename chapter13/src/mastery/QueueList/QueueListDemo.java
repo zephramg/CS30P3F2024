@@ -22,7 +22,7 @@ public class QueueListDemo {
             }
         }
         
-        // Test dequeue on empty queue
+        // Test dequeue on empty queue 
         try {
             System.out.println("\nAttempting to dequeue from an empty queue...");
             queue.dequeue();

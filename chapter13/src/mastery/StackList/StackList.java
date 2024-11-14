@@ -36,7 +36,7 @@ public class StackList {
     }
 
     // Peek operation to view the top element without removing it
-    public Object peek() {
+    public Object peek() { 
         if (isEmpty()) {
             throw new IllegalStateException("Stack is empty");
         }

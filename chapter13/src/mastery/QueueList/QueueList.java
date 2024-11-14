@@ -48,7 +48,7 @@ public class QueueList {
         }
         size--;
         return item;
-    }
+    } 
 
     // Peek operation - Returns the item at the front of the queue without removing it
     public Object peek() {
