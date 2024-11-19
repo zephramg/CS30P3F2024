@@ -20,6 +20,10 @@
  *
  * This program demonstrates the use of Monte Carlo simulation techniques
  * and explores the relationship between geometry and probability.
+ * 
+ * Author : Zephram Gilson
+ * Date: November 2024
+ * 
  */
 
 
