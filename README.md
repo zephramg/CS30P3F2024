@@ -18,4 +18,4 @@ This repository contains course materials, assignments, and projects for the CS3
 - **Description**: A project where students apply skills from other courses to create relevant, practical projects. Builds on design and project management skills.
 
 ### Other
-- **Description**: A collection of personal tests/projects.
+- **Description**: A collection of personal tests/projects made throughout the semester.
