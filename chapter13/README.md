@@ -62,6 +62,14 @@
 
   - **Classes**:
     - `ReverseList` — Implements the logic to read up to 10 integers, store them in a stack, and then reverse the order of the numbers by popping from the stack.
+   
+- **QueueList**  
+  *Implementation of a queue using a linked list.*  
+  This queue variation uses a linked list structure for dynamic storage and supports standard queue operations (`enqueue`, `dequeue`, `peek`, `isEmpty`, and `getSize`).
+
+  - **Classes**:
+    - `QueueList` — Provides queue functionality, with methods for adding, removing, and viewing elements, along with error handling for empty queues.
+    - `QueueListDemo` — Demonstrates enqueueing, dequeueing, peeking, and handling exceptions for empty queue scenarios. 
 ---
 
 ### 📚 Learning Outcomes
