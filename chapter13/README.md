@@ -1,9 +1,9 @@
 # Ch. 13 CSE3110 - Iterative Algorithms 1
 **Zephram Gilson - CS30 Fall 2024**
 
-### 📂 Overview of Skillbuilders and Mastery Projects
+### Overview of Skillbuilders and Mastery Projects
 ---
-> ### 💡 **Skillbuilders** - Stack, Queue, and Linked List implementation
+> ### **Skillbuilders** - Stack, Queue, and Linked List implementation
 ---
 - **Stack2**  
   *Implementation of a stack data structure for `Object` type.*  
@@ -46,7 +46,7 @@
     - `Node` — Represents each element in `LinkedList`, storing data and a reference to the next node.
     - `LinkedListDemo` — Demonstrates the functionality of `LinkedList`.
 ---
-> ### 🛠 **Mastery** (includes reflection logs and error logs)
+> ### **Mastery** (includes reflection logs and error logs)
 ---
 - **StackList**  
   *Implementation of a stack using a linked list.*  
@@ -72,7 +72,7 @@
     - `QueueListDemo` — Demonstrates enqueueing, dequeueing, peeking, and handling exceptions for empty queue scenarios. 
 ---
 
-### 📚 Learning Outcomes
+### Learning Outcomes
 
 This project covers:
 - Iterative algorithm development.
