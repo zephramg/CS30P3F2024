@@ -7,7 +7,7 @@ Purpose: An application that demonstrates the usage of the StackList class by pe
  
 Author: Zephram Gilson
 School: CHHS
-Course: Computer Science 30
+Course: Computer Science 30 
  
 */
 

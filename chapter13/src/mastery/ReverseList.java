@@ -11,7 +11,7 @@ Purpose: An application that accepts up to 10 integers from the user, stores the
  
 Author: Zephram Gilson
 School: CHHS
-Course: Computer Science 30
+Course: Computer Science 30 
  
 */
 

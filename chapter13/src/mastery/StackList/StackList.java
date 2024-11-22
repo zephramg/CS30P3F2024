@@ -6,7 +6,7 @@ Purpose: A class that implements a stack using a linked list, supporting push, p
  
 Author: Zephram Gilson
 School: CHHS
-Course: Computer Science 30
+Course: Computer Science 30 
  
 */
 
