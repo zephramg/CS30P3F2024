@@ -1,3 +1,15 @@
+/*
+ 
+Program: QueueList.java          Last Date of this Revision: November 23, 2024
+ 
+Purpose: A class that implements a queue using a linked list, supporting enqueue, dequeue, peek, and size operations.
+ 
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+ 
+*/
+
 package mastery.QueueList;
 
 public class QueueList {

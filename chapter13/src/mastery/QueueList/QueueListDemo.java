@@ -1,3 +1,16 @@
+/*
+ 
+Program: QueueListDemo.java          Last Date of this Revision: November 23, 2024
+ 
+Purpose: An application that demonstrates the usage of the QueueList class by performing enqueue, dequeue, peek, and other operations, 
+         while handling edge cases such as empty queues.
+ 
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+ 
+*/
+
 package mastery.QueueList;
 
 public class QueueListDemo {
@@ -41,3 +54,31 @@ public class QueueListDemo {
         System.out.println("Final queue size: " + queue.getSize());  // Expected: 0
     }
 }
+
+/* Screen Dump
+
+Enqueuing elements: A, B, C, D
+Current queue size: 4
+Peek front element: A
+
+Dequeuing elements:
+Dequeued: A
+Queue size after dequeue: 3
+Peek next front element: B
+Dequeued: B
+Queue size after dequeue: 2
+Peek next front element: C
+Dequeued: C
+Queue size after dequeue: 1
+Peek next front element: D
+Dequeued: D
+Queue size after dequeue: 0
+
+Attempting to dequeue from an empty queue...
+Caught exception: Queue is empty
+
+Attempting to peek at an empty queue...
+Caught exception: Queue is empty
+Final queue size: 0
+ 
+*/

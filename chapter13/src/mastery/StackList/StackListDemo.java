@@ -1,3 +1,16 @@
+/*
+ 
+Program: StackListDemo.java          Last Date of this Revision: November 23, 2024
+ 
+Purpose: An application that demonstrates the usage of the StackList class by performing push, pop, and peek operations, 
+         and handling edge cases such as empty stack operations.
+ 
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+ 
+*/
+
 package mastery.StackList;
 
 public class StackListDemo {
@@ -35,3 +48,22 @@ public class StackListDemo {
         }
     }
 }
+
+/* Screen Dump
+
+Pushing elements: 10, 20, 30
+Top element (peek): 30
+
+Popping elements:
+30
+20
+10
+
+Attempting to peek on an empty stack:
+Caught exception: Stack is empty
+
+Attempting to pop from an empty stack:
+Caught exception: Stack is empty
+
+ 
+ */

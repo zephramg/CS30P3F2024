@@ -1,3 +1,15 @@
+/*
+ 
+Program: StackList.java          Last Date of this Revision: November 23, 2024
+ 
+Purpose: A class that implements a stack using a linked list, supporting push, pop, peek, and isEmpty operations.
+ 
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+ 
+*/
+
 package mastery.StackList;
 
 public class StackList {

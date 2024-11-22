@@ -2,6 +2,18 @@ package mastery;
 
 import java.util.Scanner;
 import java.util.Stack;
+/*
+
+Program: ReverseList.java          Last Date of this Revision: November 23, 2024
+ 
+Purpose: An application that accepts up to 10 integers from the user, stores them in a stack, and displays them in reverse order using stack operations. 
+         The user can terminate input early by entering 999.
+ 
+Author: Zephram Gilson
+School: CHHS
+Course: Computer Science 30
+ 
+*/
 
 public class ReverseList {
     public static void main(String[] args) {
@@ -32,4 +44,9 @@ public class ReverseList {
         scanner.close(); 
     }
 }
+
+/* Screen Dump
+
+Paste the output of your code here
  
+ */
