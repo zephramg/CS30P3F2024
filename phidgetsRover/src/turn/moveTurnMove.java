@@ -23,15 +23,42 @@ public class moveTurnMove {
         leftMotors.open(5000);
         rightMotors.open(5000);
 
-        // Turn in one direction
-        leftMotors.setTargetVelocity(1);
+        // Move forward
+        leftMotors.setTargetVelocity(-1);
         rightMotors.setTargetVelocity(-1);
-
-        //Wait for 2 second
+        // Wait for 2 seconds (adjust if necessary for distance)
         Thread.sleep(2000);
 
         // Stop motors
         leftMotors.setTargetVelocity(0);
         rightMotors.setTargetVelocity(0);
+        // Wait briefly
+        Thread.sleep(500);
+
+        // Turn 180° (reduce the time to achieve a half rotation)
+        leftMotors.setTargetVelocity(1);
+        rightMotors.setTargetVelocity(-1);
+        // Adjust timing to approximately 180° (start with 800 ms and refine)
+        Thread.sleep(785); // Start here, adjust in small increments (700-900 ms)
+
+        // Stop motors
+        leftMotors.setTargetVelocity(0);
+        rightMotors.setTargetVelocity(0);
+        // Wait briefly
+        Thread.sleep(1000);
+
+        // Move backward (same duration as forward to return to start)
+        leftMotors.setTargetVelocity(-1);
+        rightMotors.setTargetVelocity(-1);
+        // Wait for 2 seconds
+        Thread.sleep(2150);
+
+        // Stop motors
+        leftMotors.setTargetVelocity(0);
+        rightMotors.setTargetVelocity(0);
+
+        // Close motors
+        leftMotors.close();
+        rightMotors.close();
     }
 }
