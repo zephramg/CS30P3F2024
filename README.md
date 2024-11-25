@@ -14,8 +14,8 @@ This repository contains course materials, assignments, and projects for the CS3
 ### Chapter 13 - CSE3110: Iterative Algorithm 1 
 - **Description**: Covers common iterative algorithms, such as binary search and sorting techniques.
 
-### CSE3910: CSE Project D 
-- **Description**: A project where students apply skills from other courses to create relevant, practical projects. Builds on design and project management skills.
+### Phidgets Rover: CSE3910 - CSE Project D 
+- **Description**: A project where students apply skills to controlling a physical rover.
 
 ### Other
 - **Description**: A collection of personal tests/projects made throughout the semester.
