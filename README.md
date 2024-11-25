@@ -15,7 +15,7 @@ This repository contains course materials, assignments, and projects for the CS3
 - **Description**: Covers common iterative algorithms, such as binary search and sorting techniques.
 
 ### Phidgets Rover: CSE3910 - CSE Project D 
-- **Description**: A project where students apply skills to controlling a physical rover.
+- **Description**: A project which apples skills to controlling a physical rover.
 
 
 
