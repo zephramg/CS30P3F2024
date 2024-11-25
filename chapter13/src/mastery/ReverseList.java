@@ -47,6 +47,17 @@ public class ReverseList {
 
 /* Screen Dump
 
-Paste the output of your code here
+Enter up to 10 numbers to reverse, or enter 999 to finish early:
+Enter number 1: 10
+Enter number 2: 20
+Enter number 3: 30
+Enter number 4: 40
+Enter number 5: 50
+Enter number 6: 60
+Enter number 7: 70
+Enter number 8: 999
+
+Reversed numbers:
+70 60 50 40 30 20 10 
  
  */
