@@ -41,5 +41,5 @@ public class avoidObstacles {
             Thread.sleep(250);
         }
     }
-}
+} 
   

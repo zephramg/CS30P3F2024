@@ -50,4 +50,4 @@ public class alteredAction {
             Thread.sleep(250);
         }
     }
-}
+} 

@@ -1,7 +1,7 @@
 /* Challenge: Make the rover travel approx 1m, turn 90 degrees, 
 drive forward another 1m, turn 90, etc., such that it drives in 
-one full square and ends in the same position as it started. */
-
+one full square and ends in the same position as it started. */ 
+ 
 package challenge;
 
 // Add Phidgets Library
