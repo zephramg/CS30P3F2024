@@ -3,7 +3,7 @@ package avoidObstacles;
 // Add Phidgets Library
 import com.phidget22.*;
 
-public class modifySpeed {
+public class modifySpeed { 
     public static void main(String[] args) throws Exception {
 
         // Connect to wireless rover

@@ -1,6 +1,6 @@
 /* Challenge: Change the sleep duration from 1 second to 2 seconds. */
 
-package move;
+package move; 
 
 import com.phidget22.DCMotor;
 import com.phidget22.Net;

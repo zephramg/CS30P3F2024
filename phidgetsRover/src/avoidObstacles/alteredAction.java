@@ -1,6 +1,6 @@
 /* Challenge: Instead of stopping when identifying an object, try backing up or turning. */
 
-package avoidObstacles;
+package avoidObstacles; 
 
 // Add Phidgets Library
 import com.phidget22.*;

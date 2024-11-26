@@ -1,7 +1,7 @@
 package avoidObstacles; 
 
 // Add Phidgets Library
-import com.phidget22.*;
+import com.phidget22.*; 
 
 public class avoidObstacles {
     public static void main(String[] args) throws Exception {

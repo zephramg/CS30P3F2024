@@ -4,7 +4,7 @@ Modify your loop delay to reflect the new interval. */
 
 package avoidObstacles;
 
-// Add Phidgets Library
+// Add Phidgets Library 
 import com.phidget22.*;
 
 public class modDataInterval {
