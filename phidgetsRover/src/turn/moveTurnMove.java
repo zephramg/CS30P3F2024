@@ -39,7 +39,7 @@ public class moveTurnMove {
         leftMotors.setTargetVelocity(1);
         rightMotors.setTargetVelocity(-1);
         // Adjust timing to approximately 180° (start with 800 ms and refine)
-        Thread.sleep(785); // Start here, adjust in small increments (700-900 ms)
+        Thread.sleep(777); // Duration of turn
 
         // Stop motors
         leftMotors.setTargetVelocity(0);
