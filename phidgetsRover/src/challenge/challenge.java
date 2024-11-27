@@ -27,8 +27,8 @@ public class challenge {
         rightMotors.open(5000);
 
         // Define the time to drive forward 1m (adjust based on rover speed)
-        int driveTime = 964; // Approximate time for 1 meter at full speed
-        int turnTime = 324; // Approximate time for a 90° turn
+        int driveTime = 936; // Approximate time for 1 meter at full speed
+        int turnTime = 330; // Approximate time for a 90° turn
         int finalTurnAdjustment = 72; // Additional time to straighten out at the end
 
         // Repeat for four sides of the square
