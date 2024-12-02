@@ -22,11 +22,11 @@ public class turn {
         rightMotors.open(5000);
 
         // Turn in one direction
-        leftMotors.setTargetVelocity(1);
-        rightMotors.setTargetVelocity(-1);
+        leftMotors.setTargetVelocity(.5);
+        rightMotors.setTargetVelocity(-.5);
 
         //Wait for 2 second
-        Thread.sleep(2000);
+        Thread.sleep(4000);
 
         // Stop motors
         leftMotors.setTargetVelocity(0);
