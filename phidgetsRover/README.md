@@ -1,9 +1,7 @@
 # Rover Control Challenge
 
 This repository contains Java programs to control a Phidgets wireless rover using various methods, including manual control and automated movement with obstacle detection.
-
-## Features
-
+---
 ### 1. Move
 This class handles the basic movement logic for the rover, allowing it to move forward and backward using motor control.
 
